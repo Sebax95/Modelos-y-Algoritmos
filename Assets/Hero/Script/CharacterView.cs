@@ -9,6 +9,8 @@ public class CharacterView : MonoBehaviour
     Animator animator;
     public Text life;
     public bool flipX;
+    public float timer = 0.5f;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -46,5 +48,20 @@ public class CharacterView : MonoBehaviour
     public void Dead(bool isDead)
     {
         animator.SetBool("Dead", isDead);
+    }
+    public void Damage()
+    {
+        if (!animator.GetBool("Dead"))
+            StartCoroutine(animDamage());
+    }
+    IEnumerator animDamage()
+    {
+        spriteRender.color = Color.red;
+        yield return new WaitForSeconds(timer);
+        spriteRender.color = Color.white;
+        yield return new WaitForSeconds(timer);
+        spriteRender.color = Color.red;
+        yield return new WaitForSeconds(timer);
+        spriteRender.color = Color.white;
     }
 }

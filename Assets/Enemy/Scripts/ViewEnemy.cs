@@ -6,6 +6,7 @@ public class ViewEnemy : MonoBehaviour
 {
     public Animator anim;
     public SpriteRenderer sp;
+    public float timer = 0.5f;
 
     void Start()
     {
@@ -30,6 +31,20 @@ public class ViewEnemy : MonoBehaviour
     public void Dead(bool isDead)//Agus
     {
         anim.SetBool("Dead", isDead);
+    }
+    public void Damage()
+    {
+        StartCoroutine(animDamage());
+    }
+    IEnumerator animDamage()
+    {
+        sp.color = Color.red;
+        yield return new WaitForSeconds(timer);
+        sp.color = Color.white;
+        yield return new WaitForSeconds(timer);
+        sp.color = Color.red;
+        yield return new WaitForSeconds(timer);
+        sp.color = Color.white;
     }
     
 

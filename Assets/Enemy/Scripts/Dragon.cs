@@ -12,20 +12,21 @@ public class Dragon : MonoBehaviour
     
     public IController myController;
     
-    public event Action<float> OnGetDmg = delegate { };
+    public event Action OnGetDmg = delegate { };
     public event Action OnDeath = delegate { };
     public event Action OnLeft = delegate { };
     public event Action OnRight = delegate { };
+    public event Action<bool> OnDead = delegate { }; //Agus
 
     public float _maxHP = 3;
     public float currentHP;
     public float fireRate, timer, distMax, distMin;
+
     public EnemySpawnBullet spawnBullet;
 
     public Transform target;
     public Transform output;
 
-    public event Action<bool> OnDead = delegate { }; //Agus
     public bool dead;//Agus
     float _timer;//Agus
     PolygonCollider2D _polygon;//Agus
@@ -42,12 +43,11 @@ public class Dragon : MonoBehaviour
         myCurrentNormal = new NormalAdvance(transform);
         myCurrentFollow = new FollowAdvance(transform, target);
         myCurrentShoot = new ShootAdvance(transform, target, fireRate, timer, spawnBullet);
-        OnDeath += Death;
     }
 
     private void Start()
     {
-        //myCurrentStrategy = myCurrentNormal;
+        
     }
 
     void Update()
@@ -60,9 +60,10 @@ public class Dragon : MonoBehaviour
 
     public void TakeDmg(float dmg)
     {
+
         currentHP -= dmg;
 
-        OnGetDmg(currentHP / _maxHP);
+        OnGetDmg();
 
         if (currentHP < 0)
             OnDeath();
@@ -79,27 +80,24 @@ public class Dragon : MonoBehaviour
 
     void Dead()//Agus
     {
-        if(currentHP<=0)
+        if (currentHP <= 0)
         {
             _timer += 1 * Time.deltaTime;
             OnDead(true);
             dead = true;
             _polygon.enabled = false;
-            if(_timer>1)
+            if (_timer > 1)
             {
                 this.gameObject.SetActive(false);
             }
         }
     }
 
-    private void Death()
-    {
-        Debug.Log("mori");
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)//Agus
     {
         if (collision.gameObject.tag == "Bullet")
-            currentHP--;
+        {
+            TakeDmg(1);
+        }
     }
 }

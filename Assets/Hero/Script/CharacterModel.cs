@@ -19,7 +19,7 @@ public class CharacterModel : MonoBehaviour
 
 
     //Public
-    public Rigidbody2D rigidbody;
+    public Rigidbody2D rb;
     public BoxCollider2D boxIdle;
     public BoxCollider2D boxCrouch;
     public BoxCollider2D boxJump;
@@ -35,13 +35,14 @@ public class CharacterModel : MonoBehaviour
     public Action<bool> OnCrouch = delegate { };
     public Action<bool> OnShootUp = delegate { };
     public Action<bool> OnDead = delegate { };
+    public Action OnDamage = delegate { };
 
     private void Awake()
     {
         _characterControler = new CharacterController();
         _characterControler.SetCharacterModel(this, _character = GetComponent<CharacterView>());
         _characterWeapon = GetComponent<CharacterWeapon>();
-        rigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
         transfom = GetComponent<Transform>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
@@ -55,7 +56,6 @@ public class CharacterModel : MonoBehaviour
     void Update()
     {
         _characterControler.ListenerInputs();
-        Life();
         Colliders();
     }
 
@@ -63,13 +63,13 @@ public class CharacterModel : MonoBehaviour
     {
         if(!isDead)
         {
-            float AxisY = rigidbody.velocity.y;
-            rigidbody.velocity = new Vector2(Axis.x * speed, Axis.y + AxisY);
+            float AxisY = rb.velocity.y;
+            rb.velocity = new Vector2(Axis.x * speed, Axis.y + AxisY);
             if (!FlipX)
                 _spriteRenderer.flipX = false;
             else if (FlipX)
                 _spriteRenderer.flipX = true;
-            if (rigidbody.velocity.x != 0)
+            if (rb.velocity.x != 0)
             {
                 OnRun(true);
                 isCrouch = false;
@@ -96,7 +96,7 @@ public class CharacterModel : MonoBehaviour
                 isCrouch = false;
                 OnShootUp(false);
                 OnCrouch(false);
-                rigidbody.AddForce(new Vector2(0, jumpForce));
+                rb.AddForce(new Vector2(0, jumpForce));
 
                 OnJump(true);
             }
@@ -220,7 +220,9 @@ public class CharacterModel : MonoBehaviour
 
     void Life()
     {
-        if(life <= 0)
+        OnDamage();
+        life--;
+        if (life <= 0)
         {
             life = 0;
             boxJump.enabled = false;
@@ -234,15 +236,19 @@ public class CharacterModel : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Floor"))
-            if (rigidbody.velocity.y == 0)
+            if (rb.velocity.y == 0)
                 if (isJumping)
                 {
                     isJumping = false;
                     OnJump(false);
                 }
-        if(collision.gameObject.layer == 9 || collision.gameObject.layer == 8)
+      
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == 9 || collision.gameObject.layer == 8)
         {
-            life--;
+            Life();
         }
     }
 }

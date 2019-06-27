@@ -13,6 +13,7 @@ public class ControlEnemy : IController
 
         d.OnLeft += v.FlipLeft;
         d.OnRight += v.FlipRight;
+        d.OnGetDmg += v.Damage;
         d.OnDead += v.Dead;//Agus
     }
 
