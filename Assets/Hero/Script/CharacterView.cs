@@ -42,4 +42,8 @@ public class CharacterView : MonoBehaviour
     {
         animator.SetBool("ShootDUP", isShootDUP);
     }
+    public void Dead(bool isDead)
+    {
+        animator.SetBool("Dead", isDead);
+    }
 }

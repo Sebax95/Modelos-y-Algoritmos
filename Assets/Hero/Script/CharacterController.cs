@@ -18,6 +18,7 @@ public class CharacterController
         _characterModel.OnRun += _characterView.Run;
         _characterModel.OnCrouch += _characterView.Crouch;
         _characterModel.OnShootUp += _characterView.ShootUp;
+        _characterModel.OnDead += _characterView.Dead;
     }
 
     public void ListenerInputs()

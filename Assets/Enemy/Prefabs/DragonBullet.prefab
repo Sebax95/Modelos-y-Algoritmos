@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 63911594115307422}
   - component: {fileID: 8585878144173979040}
   - component: {fileID: 4343228634606839327}
-  - component: {fileID: 5059688535343552569}
   - component: {fileID: 5977439922370006767}
+  - component: {fileID: 8624655606814183927}
   m_Layer: 9
   m_Name: Bullet
   m_TagString: Untagged
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_Size: {x: 4, y: 1.1000001}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &4343228634606839327
@@ -101,32 +101,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &5059688535343552569
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4635887489002070728}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4, y: 1.1000001}
-    newSize: {x: 4, y: 1.1000001}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 1
-  serializedVersion: 2
-  m_Size: {x: 1.73, y: 1.1000001}
-  m_EdgeRadius: 0
 --- !u!50 &5977439922370006767
 Rigidbody2D:
   serializedVersion: 4
@@ -148,6 +122,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!58 &8624655606814183927
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4635887489002070728}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.37252492, y: -0.0006596561}
+  serializedVersion: 2
+  m_Radius: 0.3359985
 --- !u!1 &6974961552341040657
 GameObject:
   m_ObjectHideFlags: 0

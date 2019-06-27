@@ -27,4 +27,10 @@ public class ViewEnemy : MonoBehaviour
     {
         sp.flipX = true;
     }
+    public void Dead(bool isDead)//Agus
+    {
+        anim.SetBool("Dead", isDead);
+    }
+    
+
 }

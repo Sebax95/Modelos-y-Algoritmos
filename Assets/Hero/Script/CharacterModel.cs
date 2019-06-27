@@ -12,6 +12,7 @@ public class CharacterModel : MonoBehaviour
     bool isJumping;
     bool isCrouch;
     bool isRunning;
+    bool isDead;
     float _timer;
     public CharacterWeapon _characterWeapon;
 
@@ -24,6 +25,7 @@ public class CharacterModel : MonoBehaviour
     public Transform transfom;
     public float speed;
     public float jumpForce;
+    public int life;
 
 
 
@@ -31,6 +33,7 @@ public class CharacterModel : MonoBehaviour
     public Action<bool> OnRun = delegate { };
     public Action<bool> OnCrouch = delegate { };
     public Action<bool> OnShootUp = delegate { };
+    public Action<bool> OnDead = delegate { };
 
     private void Awake()
     {
@@ -51,115 +54,141 @@ public class CharacterModel : MonoBehaviour
     void Update()
     {
         _characterControler.ListenerInputs();
-
+        Life();
         Colliders();
     }
 
     public void Move(Vector2 Axis, bool FlipX)
     {
+        if(!isDead)
+        {
+            float AxisY = rigidbody.velocity.y;
+            rigidbody.velocity = new Vector2(Axis.x * speed, Axis.y + AxisY);
+            if (!FlipX)
+                _spriteRenderer.flipX = false;
+            else if (FlipX)
+                _spriteRenderer.flipX = true;
+            if (rigidbody.velocity.x != 0)
+            {
+                OnRun(true);
+                isCrouch = false;
+                OnShootUp(false);
+                OnCrouch(false);
+                isRunning = true;
+            }
+            else
+            {
+                OnRun(false);
+                isRunning = false;
+            }
+        }
         //_spriteRenderer.flipX = 
-        float AxisY = rigidbody.velocity.y;
-        rigidbody.velocity = new Vector2(Axis.x * speed, Axis.y + AxisY);
-        if (!FlipX)
-            _spriteRenderer.flipX = false;
-        else if (FlipX)
-            _spriteRenderer.flipX = true;
-        if (rigidbody.velocity.x != 0)
-        {
-            OnRun(true);
-            isCrouch = false;
-            OnShootUp(false);
-            OnCrouch(false);
-            isRunning = true;
-        }
-        else
-        {
-            OnRun(false);
-            isRunning = false;
-        }
     }
 
     public void Jump()
     {
-        if (!isJumping)
+        if (!isDead)
         {
-            isJumping = true;
-            isCrouch = false;
-            OnShootUp(false);
-            OnCrouch(false);
-            rigidbody.AddForce(new Vector2(0, jumpForce));
+            if (!isJumping)
+            {
+                isJumping = true;
+                isCrouch = false;
+                OnShootUp(false);
+                OnCrouch(false);
+                rigidbody.AddForce(new Vector2(0, jumpForce));
 
-            OnJump(true);
+                OnJump(true);
+            }
         }
     }
 
     public void Crouch()
     {
-        if (!isJumping)
+        if (!isDead)
         {
-            isCrouch = true;
-            OnShootUp(false);
-            OnCrouch(true);
+
+            if (!isJumping)
+            {
+                isCrouch = true;
+                OnShootUp(false);
+                OnCrouch(true);
+            }
         }
     }
 
     public void Shoot(bool flipX)
     {
-        _timer += 1 * Time.deltaTime;
-        if (!isJumping && !isCrouch)
+        if (!isDead)
         {
-            if (_timer > 0.25f)
+            _timer += 1 * Time.deltaTime;
+            if (!isJumping && !isCrouch)
             {
-                _characterWeapon.Shoot(flipX);
-                _timer = 0;
+                if (_timer > 0.25f)
+                {
+                    _characterWeapon.Shoot(flipX);
+                    _timer = 0;
+                }
             }
-        }
-        else if (isCrouch)
-        {
-            if (_timer > 0.25f)
+            else if (isCrouch)
             {
-                _characterWeapon.ShootCrouch(flipX);
-                _timer = 0;
+                if (_timer > 0.25f)
+                {
+                    _characterWeapon.ShootCrouch(flipX);
+                    _timer = 0;
+                }
             }
         }
     }
     public void SeeUp()
     {
-        if (!isJumping && !isRunning)
+        if (!isDead)
         {
-            boxIdle.enabled = true;
-            boxCrouch.enabled = false;
-            OnShootUp(true);
+
+            if (!isJumping && !isRunning)
+            {
+                boxIdle.enabled = true;
+                boxCrouch.enabled = false;
+                OnShootUp(true);
+            }
         }
     }
     public void ShootUp(bool flipX)
     {
-        if (!isJumping && !isRunning)
+        if (!isDead)
         {
-            _characterWeapon.ShootUp(flipX);
+            if (!isJumping && !isRunning)
+            {
+                _characterWeapon.ShootUp(flipX);
+            }
         }
     }
     public void ShootFUP(bool flipX)
     {
-        _timer += 1 * Time.deltaTime;
-        if (!isJumping && !isCrouch)
+        if (!isDead)
         {
-            if (_timer > 0.25f)
+            _timer += 1 * Time.deltaTime;
+            if (!isJumping && !isCrouch)
             {
-                _characterWeapon.ShootFrontUp(flipX);
-                _timer = 0;
+                if (_timer > 0.25f)
+                {
+                    _characterWeapon.ShootFrontUp(flipX);
+                    _timer = 0;
+                }
             }
         }
     }
     public void ShootDUP(bool flipX)
     {
-        _timer += 1 * Time.deltaTime;
-        if (!isJumping && !isCrouch)
+        if (!isDead)
         {
-            if (_timer > 0.25f)
+            _timer += 1 * Time.deltaTime;
+            if (!isJumping && !isCrouch)
             {
-                _characterWeapon.ShootFrontDown(flipX);
-                _timer = 0;
+                if (_timer > 0.25f)
+                {
+                    _characterWeapon.ShootFrontDown(flipX);
+                    _timer = 0;
+                }
             }
         }
     }
@@ -188,6 +217,18 @@ public class CharacterModel : MonoBehaviour
         }
     }
 
+    void Life()
+    {
+        if(life <= 0)
+        {
+            boxJump.enabled = false;
+            boxIdle.enabled = false;
+            boxCrouch.enabled = true;
+            isDead = true;
+            OnDead(true);
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Floor"))
@@ -197,5 +238,10 @@ public class CharacterModel : MonoBehaviour
                     isJumping = false;
                     OnJump(false);
                 }
+        if(collision.gameObject.layer == 9 || collision.gameObject.layer == 8)
+        {
+            life--;
+        }
+
     }
 }
