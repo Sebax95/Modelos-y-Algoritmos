@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6062057246520283498}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 6062057248350245889}
   - component: {fileID: 6062057248350245917}
   - component: {fileID: 6062057248350245916}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Character
   m_TagString: Hero
   m_Icon: {fileID: 0}
@@ -157,6 +157,7 @@ MonoBehaviour:
   transfom: {fileID: 0}
   speed: 5
   jumpForce: 300
+  life: 0
 --- !u!114 &6062057248350245919
 MonoBehaviour:
   m_ObjectHideFlags: 0

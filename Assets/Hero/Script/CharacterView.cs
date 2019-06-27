@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterView : MonoBehaviour
 {
     SpriteRenderer spriteRender;
     Animator animator;
+    public Text life;
     public bool flipX;
-
     private void Awake()
     {
         animator = GetComponent<Animator>();

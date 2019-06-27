@@ -9,6 +9,7 @@ public class CharacterModel : MonoBehaviour
     CharacterController _characterControler;
     CharacterView _character;
     SpriteRenderer _spriteRenderer;
+    Item _Item;
     bool isJumping;
     bool isCrouch;
     bool isRunning;
@@ -221,6 +222,7 @@ public class CharacterModel : MonoBehaviour
     {
         if(life <= 0)
         {
+            life = 0;
             boxJump.enabled = false;
             boxIdle.enabled = false;
             boxCrouch.enabled = true;
@@ -242,6 +244,5 @@ public class CharacterModel : MonoBehaviour
         {
             life--;
         }
-
     }
 }

@@ -78,7 +78,10 @@
     <Compile Include="Assets\Hero\Script\CharacterPool.cs" />
     <Compile Include="Assets\Hero\Script\CharacterView.cs" />
     <Compile Include="Assets\Hero\Script\CharacterWeapon.cs" />
+    <Compile Include="Assets\Hero\Script\HUD.cs" />
     <Compile Include="Assets\Hero\Script\IShoots.cs" />
+    <Compile Include="Assets\Items\Heart.cs" />
+    <Compile Include="Assets\Items\Item.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Agustín/Documents/GitHub/Modelos-y-Algoritmos/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

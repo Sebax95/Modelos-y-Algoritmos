@@ -6,12 +6,14 @@ public class EnemyBullet : MonoBehaviour
 {
     public float speed;
     public float maxDistance;
+    public CircleCollider2D _box;//Agus
 
     private float _currentDistance;
 
     public void Reset()
     {
         _currentDistance = 0;
+        _box.enabled = true;// Agus
     }
 
     void Update()
@@ -32,5 +34,11 @@ public class EnemyBullet : MonoBehaviour
     public static void TurnOff(EnemyBullet b)
     {
         b.gameObject.SetActive(false);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)//Agus
+    {
+        if (collision.gameObject.tag == "Hero")
+            _box.enabled = false;
     }
 }
