@@ -150,14 +150,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _characterWeapon: {fileID: 6062057248350245918}
-  rigidbody: {fileID: 0}
+  rb: {fileID: 0}
   boxIdle: {fileID: 6062057248350245889}
   boxCrouch: {fileID: 6062057248350245917}
   boxJump: {fileID: 6062057248350245916}
   transfom: {fileID: 0}
-  speed: 5
+  speed: 3.5
   jumpForce: 300
-  life: 0
+  life: 2
 --- !u!114 &6062057248350245919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,7 +170,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b78080413460cb4fae7d17e5042fe06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  life: {fileID: 0}
   flipX: 0
+  timer: 0.5
 --- !u!114 &6062057248350245918
 MonoBehaviour:
   m_ObjectHideFlags: 0
