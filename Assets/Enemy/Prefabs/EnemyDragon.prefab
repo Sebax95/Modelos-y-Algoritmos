@@ -181,7 +181,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 7fce9625f8d78be4e9a6dd2987d0ba1f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -324,5 +324,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefBalaEnemy: {fileID: 4474542633133907701, guid: 4ecc2475e29d2114698118e50b1f7a2b,
     type: 3}
-  outputGunL: {fileID: 0}
-  outputGunR: {fileID: 0}
+  outputGunL: {fileID: 5534425393250209148}
+  outputGunR: {fileID: 5534425393063835813}
