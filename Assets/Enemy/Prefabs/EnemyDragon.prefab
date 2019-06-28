@@ -105,6 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
   sp: {fileID: 0}
+  timer: 0.5
 --- !u!1 &5534425394833657161
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,14 +224,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d248e64b8ec6877468f4e4802528c053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _maxHP: 3
   currentHP: 0
   fireRate: 0.7
   timer: 0
   distMax: 15
   distMin: 7
   spawnBullet: {fileID: 0}
-  target: {fileID: 0}
+  target: {fileID: 6062057248350245888, guid: 98c4716d4b8ca0145899aa5f4ba84caf, type: 3}
   output: {fileID: 5534425393063835813}
+  dead: 0
 --- !u!50 &5534425394833657203
 Rigidbody2D:
   serializedVersion: 4
