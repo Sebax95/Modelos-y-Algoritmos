@@ -12,7 +12,7 @@ public class CharacterWeapon : MonoBehaviour, IShoot1
     private void Start()
     {
         _Instance = this;
-        pool = new CharacterPool<BulletRed>(BulletFactory, BulletRed.TurnOn, BulletRed.TurnOff, 30, true);
+        pool = new ObjectPool<BulletRed>(BulletFactory, BulletRed.TurnOn, BulletRed.TurnOff, 30, true);
     }
 
     public BulletRed BulletFactory()
@@ -20,7 +20,7 @@ public class CharacterWeapon : MonoBehaviour, IShoot1
         return Instantiate(bulletPrefab);
     }
 
-    private CharacterPool<BulletRed> pool;
+    private ObjectPool<BulletRed> pool;
 
     public void ReturnBullet(BulletRed bullet)
     {
