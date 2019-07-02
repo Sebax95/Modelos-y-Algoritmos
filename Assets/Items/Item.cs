@@ -5,14 +5,12 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     Animator _animator;
-    BoxCollider2D _boxcollider;
-    public  CharacterModel _characterModel;
-    bool take;
+    public bool take;
+    bool colision;
     float timer;
 
     public virtual void Awake()
     {
-        _characterModel = FindObjectOfType<CharacterModel>();
         _animator = GetComponent<Animator>();
         take = false;
     }
@@ -21,30 +19,22 @@ public class Item : MonoBehaviour
         Take();
     }
 
-    public virtual void Effect()
-    { 
-    }
-
     public virtual void Take()
     {
+       
         if(take)
         {
+            _animator.SetTrigger("Take");
             timer += 1 * Time.deltaTime;
             if(timer > 0.5)
             {
-                Destroy(gameObject);
+                gameObject.SetActive(false);
             }
         }
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    public virtual void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Hero")
-        {
-            take = true;
-            _animator.SetTrigger("Take");
-            this.gameObject.layer = 10;
-            Effect(); ;
-        }
+        
     }
+   
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4554832504352403476}
   m_Layer: 0
   m_Name: EndLevel
-  m_TagString: Untagged
+  m_TagString: nextLV
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,7 +83,7 @@ GameObject:
   - component: {fileID: 6801220134879704292}
   m_Layer: 0
   m_Name: Portal
-  m_TagString: Untagged
+  m_TagString: nextLV
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

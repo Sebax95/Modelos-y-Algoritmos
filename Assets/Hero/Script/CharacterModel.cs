@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class CharacterModel : MonoBehaviour
+public class CharacterModel : MonoBehaviour, IObservable
 {
     //Private
+    CharacterWeapon _characterWeapon;
     CharacterController _characterControler;
     CharacterView _character;
     SpriteRenderer _spriteRenderer;
@@ -14,9 +15,9 @@ public class CharacterModel : MonoBehaviour
     bool isCrouch;
     bool isRunning;
     bool isDead;
+    bool isSeeUp;
     float _timer;
     float _timer2;
-    public CharacterWeapon _characterWeapon;
 
 
     //Public
@@ -30,7 +31,7 @@ public class CharacterModel : MonoBehaviour
     public int life;
     public bool inmortal;
 
-
+    private List<IObserver> _allObservers = new List<IObserver>();
 
     public Action<bool> OnJump = delegate { }; //Esto es para que se cree inicializada en vacia y no explote si lo queres ejecutar
     public Action<bool> OnRun = delegate { };
@@ -48,14 +49,11 @@ public class CharacterModel : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         transfom = GetComponent<Transform>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
+         EventsManager.SubscribeToEvent(EventType.GP_MoreHp, MoreHP);
+        EventsManager.SubscribeToEvent(EventType.GP_MoreSpeed,MoreSpeed);
+        EventsManager.SubscribeToEvent(EventType.GP_Inmortal, Inmortal);
     }
-
-    void Start()
-    {
-
-    }
-
-
+    
     void Update()
     {
         if (!isDead)
@@ -75,16 +73,17 @@ public class CharacterModel : MonoBehaviour
             _spriteRenderer.flipX = true;
         if (rb.velocity.x != 0)
         {
-            OnRun(true);
             isCrouch = false;
+            isRunning = true;
+            isSeeUp = false;
+            OnRun(true);
             OnShootUp(false);
             OnCrouch(false);
-            isRunning = true;
         }
         else
         {
-            OnRun(false);
             isRunning = false;
+            OnRun(false);
         }
 
         //_spriteRenderer.flipX = 
@@ -97,6 +96,7 @@ public class CharacterModel : MonoBehaviour
             {
                 isJumping = true;
                 isCrouch = false;
+                isSeeUp = false;
                 OnShootUp(false);
                 OnCrouch(false);
                 rb.AddForce(new Vector2(0, jumpForce));
@@ -109,60 +109,109 @@ public class CharacterModel : MonoBehaviour
 
     public void Crouch()
     {
-
-
         if (!isJumping)
         {
             isCrouch = true;
+            isSeeUp = false;
             OnShootUp(false);
             OnCrouch(true);
         }
 
     }
 
+    public void SeeUp()
+    {
+        if (!isJumping)
+        {
+            isSeeUp = true;
+            isCrouch = false;
+            OnShootUp(true);
+            OnCrouch(false);
+        }
+    }
+
     public void Shoot(bool flipX)
     {
-
         _timer += 1 * Time.deltaTime;
-        if (!isJumping && !isCrouch)
+        if (!isJumping && !isCrouch && !isSeeUp )
         {
             if (_timer > 0.25f)
             {
                 _characterWeapon.Shoot(flipX);
                 _timer = 0;
             }
+            if (flipX)
+            {
+                for (int i = _allObservers.Count - 1; i >= 0; i--)
+                {
+                    _allObservers[i].OnNotify("Normal2");
+                }
+            }
+            else
+            {
+                for (int i = _allObservers.Count - 1; i >= 0; i--)
+                {
+                    _allObservers[i].OnNotify("Normal1");
+                }
+            }
         }
-        else if (isCrouch)
+    }
+    
+    public void ShootCrouch(bool flipX)
+    {
+        if (isCrouch)
         {
+            _timer += 1 * Time.deltaTime;
             if (_timer > 0.25f)
             {
                 _characterWeapon.ShootCrouch(flipX);
                 _timer = 0;
             }
+            if (flipX)
+            {
+                for (int i = _allObservers.Count - 1; i >= 0; i--)
+                {
+                    _allObservers[i].OnNotify("Down2");
+                }
+            }
+            else
+            {
+                for (int i = _allObservers.Count - 1; i >= 0; i--)
+                {
+                    _allObservers[i].OnNotify("Down1");
+                }
+            }
         }
-
     }
-    public void SeeUp()
-    {
 
-
-        if (!isJumping && !isRunning)
-        {
-            boxIdle.enabled = true;
-            boxCrouch.enabled = false;
-            OnShootUp(true);
-        }
-
-    }
     public void ShootUp(bool flipX)
     {
-
-        if (!isJumping && !isRunning)
+        if (isSeeUp)
         {
-            _characterWeapon.ShootUp(flipX);
+            _timer += 1 * Time.deltaTime;
+            if (_timer > 0.25f)
+            {
+                _characterWeapon.ShootUp(flipX);
+                _timer = 0;
+            }
+            if (flipX)
+            {
+                for (int i = _allObservers.Count - 1; i >= 0; i--)
+                {
+                    _allObservers[i].OnNotify("Up2");
+                }
+            }
+            else
+            {
+                for (int i = _allObservers.Count - 1; i >= 0; i--)
+                {
+                    _allObservers[i].OnNotify("Up1");
+                }
+            }
         }
-
+        
     }
+
     public void ShootFUP(bool flipX)
     {
 
@@ -173,6 +222,20 @@ public class CharacterModel : MonoBehaviour
             {
                 _characterWeapon.ShootFrontUp(flipX);
                 _timer = 0;
+            }
+            if (flipX)
+            {
+                for (int i = _allObservers.Count - 1; i >= 0; i--)
+                {
+                    _allObservers[i].OnNotify("UF2");
+                }
+            }
+            else
+            {
+                for (int i = _allObservers.Count - 1; i >= 0; i--)
+                {
+                    _allObservers[i].OnNotify("UF1");
+                }
             }
         }
 
@@ -187,6 +250,20 @@ public class CharacterModel : MonoBehaviour
             {
                 _characterWeapon.ShootFrontDown(flipX);
                 _timer = 0;
+            }
+            if (flipX)
+            {
+                for (int i = _allObservers.Count - 1; i >= 0; i--)
+                {
+                    _allObservers[i].OnNotify("DF2");
+                }
+            }
+            else
+            {
+                for (int i = _allObservers.Count - 1; i >= 0; i--)
+                {
+                    _allObservers[i].OnNotify("DF1");
+                }
             }
         }
 
@@ -255,6 +332,11 @@ public class CharacterModel : MonoBehaviour
                     isJumping = false;
                     OnJump(false);
                 }
+        if (collision.gameObject.tag == "nextLV")
+        {
+            bool next = true;
+            EventsManager.TriggerEvent(EventType.GP_NextLVL, new object[] { next });
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -264,4 +346,32 @@ public class CharacterModel : MonoBehaviour
                 Life();
         }
     }
+
+    public void Subscribe(IObserver observer)
+    {
+        if (!_allObservers.Contains(observer))
+            _allObservers.Add(observer);
+    }
+
+    public void Unsubscribe(IObserver observer)
+    {
+        if (_allObservers.Contains(observer))
+            _allObservers.Remove(observer);
+    }
+
+    void MoreHP(params object[] parameters)
+    {
+        life += (int)parameters[0];
+    }
+
+    void MoreSpeed(params object[] parameters)
+    {
+        speed += (float)parameters[0];
+    }
+
+    void Inmortal(params object[] parameters)
+    {
+        inmortal = (bool)parameters[0];
+    }
+
 }

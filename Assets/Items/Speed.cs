@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class Speed : Item
 {
-    public override void Effect()
+    public override void OnTriggerEnter2D(Collider2D collision)
     {
-        _characterModel.speed += 3 ;
+        if (collision.gameObject.tag == "Hero")
+        {
+            take = true;
+            float speed = 3;
+            EventsManager.TriggerEvent(EventType.GP_MoreSpeed, new object[] { speed });
+        }
+
+           
     }
 }

@@ -84,15 +84,17 @@
     <Compile Include="Assets\Enemy\Soldier\Scripts\SoliderAdvance\NomalSoldierAdvance.cs" />
     <Compile Include="Assets\Enemy\Soldier\Scripts\SoliderAdvance\ShootSoldierAdvance.cs" />
     <Compile Include="Assets\Enemy\Soldier\Scripts\ViewSoldier.cs" />
+    <Compile Include="Assets\EventsManager.cs" />
     <Compile Include="Assets\Hero\Bullet\BulletRed.cs" />
+    <Compile Include="Assets\Hero\Bullet\Weapon.cs" />
     <Compile Include="Assets\Hero\Camera.cs" />
+    <Compile Include="Assets\Hero\Observer\IObservable.cs" />
+    <Compile Include="Assets\Hero\Observer\IObserver.cs" />
     <Compile Include="Assets\Hero\Script\CharacterController.cs" />
     <Compile Include="Assets\Hero\Script\CharacterModel.cs" />
-    <Compile Include="Assets\Hero\Script\CharacterPool.cs" />
     <Compile Include="Assets\Hero\Script\CharacterView.cs" />
     <Compile Include="Assets\Hero\Script\CharacterWeapon.cs" />
     <Compile Include="Assets\Hero\Script\HUD.cs" />
-    <Compile Include="Assets\Hero\Script\IShoots.cs" />
     <Compile Include="Assets\Items\Heart.cs" />
     <Compile Include="Assets\Items\Item.cs" />
     <Compile Include="Assets\Items\Speed.cs" />
@@ -100,22 +102,21 @@
     <Compile Include="Assets\Scene\End.cs" />
     <Compile Include="Assets\Scene\Menu.cs" />
     <Compile Include="Assets\Scene\Reset.cs" />
-    <Compile Include="Assets\Spawns\ActiveGameobject.cs" />
     <Compile Include="Assets\Spawns\SpwnPoint.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Agustín/Desktop/Modelos-y-Algoritmos/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Agustín/Documents/GitHub/Modelos-y-Algoritmos/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Agustín/Desktop/Modelos-y-Algoritmos/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Agustín/Documents/GitHub/Modelos-y-Algoritmos/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Agustín/Desktop/Modelos-y-Algoritmos/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Agustín/Documents/GitHub/Modelos-y-Algoritmos/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Agustín/Desktop/Modelos-y-Algoritmos/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Agustín/Documents/GitHub/Modelos-y-Algoritmos/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/Agustín/Desktop/Modelos-y-Algoritmos/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/Agustín/Documents/GitHub/Modelos-y-Algoritmos/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -322,13 +323,13 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/Agustín/Desktop/Modelos-y-Algoritmos/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/Agustín/Documents/GitHub/Modelos-y-Algoritmos/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/Agustín/Desktop/Modelos-y-Algoritmos/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Agustín/Documents/GitHub/Modelos-y-Algoritmos/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/Agustín/Desktop/Modelos-y-Algoritmos/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/Agustín/Documents/GitHub/Modelos-y-Algoritmos/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

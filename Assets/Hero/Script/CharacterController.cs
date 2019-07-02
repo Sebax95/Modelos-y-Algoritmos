@@ -7,6 +7,7 @@ public class CharacterController
     CharacterModel _characterModel;
     CharacterView _characterView;
     bool flipX;
+    bool normalShoot;
 
 
     public void SetCharacterModel(CharacterModel characterModel, CharacterView characterView)
@@ -35,55 +36,103 @@ public class CharacterController
         if (Input.GetKeyDown(KeyCode.X))
             _characterModel.Jump();
 
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.DownArrow) && AxisX != 0)
         {
-            if (AxisX != 0)
-            {
-                if (Input.GetKey(KeyCode.Z))
-                {
-                    _characterModel.ShootDUP(flipX);
-                    if (AxisX != 0)
-                        _characterView.ShootDUP(true);
-                }
-            }
-            else
-            {
-                _characterModel.Crouch();
-                _characterView.ShootDUP(false);
-            }
+            _characterView.ShootDUP(true);
+            normalShoot = false;
+            if (Input.GetKey(KeyCode.Z))
+                _characterModel.ShootDUP(flipX);
         }
-        else if (Input.GetKey(KeyCode.UpArrow))
+        else if (Input.GetKey(KeyCode.UpArrow) && AxisX != 0)
+        {
+            _characterView.ShootFUP(true);
+            normalShoot = false;
+            if (Input.GetKey(KeyCode.Z))
+                _characterModel.ShootFUP(flipX);
+        }
+        else
+        {
+            _characterView.ShootDUP(false);
+            _characterView.ShootFUP(false);
+            normalShoot = true;
+        }
+        if (Input.GetKey(KeyCode.DownArrow) && AxisX == 0)
+        {
+            _characterModel.Crouch();
+
+        }
+        if (Input.GetKey(KeyCode.Z) && AxisX == 0)
+        {
+            _characterModel.ShootCrouch(flipX);
+        }
+        if (Input.GetKey(KeyCode.UpArrow) && AxisX == 0)
         {
             _characterModel.SeeUp();
-            if (AxisX != 0 && Input.GetKey(KeyCode.Z))
-            {
-                _characterModel.ShootFUP(flipX);
-
-                _characterView.ShootFUP(true);
-            }
-            else if (Input.GetKeyDown(KeyCode.Z))
-            {
-                _characterModel.ShootUp(flipX);
-                _characterView.ShootFUP(false);
-            }
+            
         }
-        else if (Input.GetKey(KeyCode.Z))
+        if (Input.GetKey(KeyCode.Z) && AxisX == 0)
+        {
+            _characterModel.ShootUp(flipX);
+        }
+        if (Input.GetKey(KeyCode.Z) && normalShoot)
         {
             _characterModel.Shoot(flipX);
             if (AxisX != 0)
-            {
                 _characterView.ShootRun(true);
-                _characterView.ShootDUP(false);
-                _characterView.ShootFUP(false);
-            }
+            else
+                _characterView.ShootRun(false);
         }
-        else if (AxisX == 0)
-        {
-            _characterView.ShootRun(false);
-            _characterView.ShootDUP(false);
-            _characterView.ShootFUP(false);
-        }
-        else
-            _characterView.ShootUp(false);
+
+
+        /*  if (Input.GetKey(KeyCode.DownArrow))
+          {
+              if (AxisX != 0)
+              {
+                  if (Input.GetKey(KeyCode.Z))
+                  {
+                      _characterModel.ShootDUP(flipX);
+                      if (AxisX != 0)
+                          _characterView.ShootDUP(true);
+                  }
+              }
+              else
+              {
+                  _characterModel.Crouch();
+                  _characterView.ShootDUP(false);
+              }
+          }
+          else if (Input.GetKey(KeyCode.UpArrow))
+          {
+              _characterModel.SeeUp();
+              if (AxisX != 0 && Input.GetKey(KeyCode.Z))
+              {
+                  _characterModel.ShootFUP(flipX);
+
+                  _characterView.ShootFUP(true);
+              }
+              else if (Input.GetKeyDown(KeyCode.Z))
+              {
+                  _characterModel.ShootUp(flipX);
+                  _characterView.ShootFUP(false);
+              }
+          }
+          else if (Input.GetKey(KeyCode.Z))
+          {
+              _characterModel.Shoot(flipX);
+              if (AxisX != 0)
+              {
+                  _characterView.ShootRun(true);
+                  _characterView.ShootDUP(false);
+                  _characterView.ShootFUP(false);
+              }
+          }
+          else if (AxisX == 0)
+          {
+              _characterView.ShootRun(false);
+              _characterView.ShootDUP(false);
+              _characterView.ShootFUP(false);
+          }
+          else
+              _characterView.ShootUp(false);*/
     }
 }

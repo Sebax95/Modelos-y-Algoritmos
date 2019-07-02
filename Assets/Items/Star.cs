@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class Star :Item
 {
-    public override void Effect()
+    public override void OnTriggerEnter2D(Collider2D collision)
     {
-        _characterModel.inmortal = true;
+        if (collision.gameObject.tag == "Hero")
+        {
+            take = true;
+            bool inmortal = true;
+            EventsManager.TriggerEvent(EventType.GP_Inmortal, new object[] { inmortal });
+        }
+          
     }
 }

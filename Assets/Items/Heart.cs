@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class Heart : Item
 {
-    public override void Effect()
+    public override void OnTriggerEnter2D(Collider2D collision)
     {
-        _characterModel.life += 3;
+        if(collision.gameObject.tag == "Hero")
+        {
+            take = true;
+            int life = 3;
+            EventsManager.TriggerEvent(EventType.GP_MoreHp, new object[] { life });
+
+        }
     }
 
 }

@@ -2,17 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using System;
 
 public class Reset : MonoBehaviour
 {
-
+    bool next = false;
 	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update ()
+	void Start ()
+    {
+        EventsManager.SubscribeToEvent(EventType.GP_NextLVL, NextLVL);
+    }
+
+    private void NextLVL(object[] parameter)
+    {
+        next = (bool)parameter[0];
+    }
+
+    // Update is called once per frame
+    void Update ()
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -22,11 +29,11 @@ public class Reset : MonoBehaviour
         {
             SceneManager.LoadScene("Menu");
         }
+        if(next)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+        }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "Hero")
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
-    }
+   
 }
