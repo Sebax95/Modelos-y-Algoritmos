@@ -38,6 +38,7 @@ public class BestSoldier : MonoBehaviour
 
     void Awake()
     {
+        target = GameObject.FindObjectOfType<CharacterModel>().transform;
         _collider = GetComponent<BoxCollider2D>();//Agus
         spawnBullet = GetComponent<SoldierSpawnerPool>();
         currentHP = _maxHP;

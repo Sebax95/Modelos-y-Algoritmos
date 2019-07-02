@@ -36,6 +36,7 @@ public class Dragon : MonoBehaviour
 
     void Awake()
     {
+        target = GameObject.FindObjectOfType<CharacterModel>().transform;
         _polygon = GetComponent<PolygonCollider2D>();//Agus
         spawnBullet = GetComponent<EnemySpawnBullet>();
         currentHP = _maxHP;

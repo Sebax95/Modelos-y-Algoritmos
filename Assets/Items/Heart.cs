@@ -6,7 +6,7 @@ public class Heart : Item
 {
     public override void Effect()
     {
-        _characterModel.life += 1;
+        _characterModel.life += 3;
     }
 
 }

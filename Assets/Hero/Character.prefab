@@ -157,7 +157,8 @@ MonoBehaviour:
   transfom: {fileID: 0}
   speed: 3.5
   jumpForce: 300
-  life: 2
+  life: 10
+  inmortal: 0
 --- !u!114 &6062057248350245919
 MonoBehaviour:
   m_ObjectHideFlags: 0

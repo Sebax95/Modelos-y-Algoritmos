@@ -18,6 +18,10 @@ public class Reset : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            SceneManager.LoadScene("Menu");
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

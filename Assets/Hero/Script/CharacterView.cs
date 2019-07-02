@@ -9,12 +9,20 @@ public class CharacterView : MonoBehaviour
     Animator animator;
     public Text life;
     public bool flipX;
-    public float timer = 0.5f;
+    bool inmortal;
+    public float timer = 0.25f;
 
     private void Awake()
     {
+        inmortal = false;
         animator = GetComponent<Animator>();
         spriteRender = GetComponent<SpriteRenderer>();
+    }
+
+    private void Update()
+    {
+        if (inmortal)
+            StartCoroutine(Inmortalll());
     }
 
     public void Jump(bool isjump)
@@ -54,6 +62,11 @@ public class CharacterView : MonoBehaviour
         if (!animator.GetBool("Dead"))
             StartCoroutine(animDamage());
     }
+    public void Inmortal(bool isInmortal)
+    {
+        inmortal = isInmortal;
+    }
+
     IEnumerator animDamage()
     {
         spriteRender.color = Color.red;
@@ -63,5 +76,15 @@ public class CharacterView : MonoBehaviour
         spriteRender.color = Color.red;
         yield return new WaitForSeconds(timer);
         spriteRender.color = Color.white;
+    }
+    IEnumerator Inmortalll()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            spriteRender.color = Color.yellow;
+            yield return new WaitForSeconds(timer);
+            spriteRender.color = Color.white;
+            yield return new WaitForSeconds(timer);
+        }
     }
 }

@@ -20,6 +20,7 @@ public class CharacterController
         _characterModel.OnShootUp += _characterView.ShootUp;
         _characterModel.OnDead += _characterView.Dead;
         _characterModel.OnDamage += _characterView.Damage;
+        _characterModel.OnInmortal += _characterView.Inmortal;
     }
 
     public void ListenerInputs()
@@ -84,7 +85,5 @@ public class CharacterController
         }
         else
             _characterView.ShootUp(false);
-
-
     }
 }

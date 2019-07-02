@@ -25,7 +25,6 @@ public class Soldier : MonoBehaviour
     public float fireRate, timer, distMax, distMin;
 
     public SoldierSpawnerPool spawnBullet;
-
     public Vector2 startPos;
     public Transform target;
     public Transform outputGunL;
@@ -39,6 +38,7 @@ public class Soldier : MonoBehaviour
 
     void Awake()
     {
+        target = GameObject.FindObjectOfType<CharacterModel>().transform;
         _collider = GetComponent<BoxCollider2D>();//Agus
         spawnBullet = GetComponent<SoldierSpawnerPool>();
         currentHP = _maxHP;

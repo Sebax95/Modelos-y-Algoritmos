@@ -29,7 +29,7 @@ public class BulletRed : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject)
+        if(collision.gameObject.layer != 11)
         {
             CharacterWeapon.Instance.ReturnBullet(this);
         }
