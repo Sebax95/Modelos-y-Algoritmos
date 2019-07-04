@@ -30,14 +30,16 @@ public class ControlSoldier : MonoBehaviour, IController
              var dist = Vector2.Distance(s.transform.position, s.target.transform.position);
              if (dist <= s.distMax)
              {
-                 if (dist <= s.distMin)
-                 {
-                     s.myCurrentStrategy = s.myCurrentShoot;
-                 }
-                 else
-                 {
-                     s.myCurrentStrategy = s.myCurrentFollow;
-                 }
+                if (dist <= s.distMin)
+                {
+
+                    s.myCurrentStrategy = s.strategyBalaActual;
+
+                }
+                else
+                {
+                    s.myCurrentStrategy = s.myCurrentFollow;
+                }
              }
              else
              {

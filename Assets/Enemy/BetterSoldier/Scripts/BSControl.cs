@@ -32,7 +32,7 @@ public class BSControl : MonoBehaviour, IController
             {
                 if (dist <= s.distMin)
                 {
-                    s.myCurrentStrategy = s.myCurrentShoot;
+                    s.myCurrentStrategy = s.strategyBalaActual;
                 }
                 else
                 {

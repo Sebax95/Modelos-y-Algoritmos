@@ -16,7 +16,6 @@ public class SoldierBullet : MonoBehaviour
 
     void Update()
     {
-        //transform.right = GameObject.FindObjectOfType<CharacterModel>().transform.position;
         transform.position += transform.right * speed * Time.deltaTime;
         _currentDistance += speed * Time.deltaTime;
         if (_currentDistance > maxDistance)
