@@ -11,5 +11,17 @@ public class End : MonoBehaviour
         {
             SceneManager.LoadScene("Menu");
         }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        }
+        if (SceneManager.GetActiveScene().name != "End")
+        {
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+        }
+      
     }
 }

@@ -46,7 +46,7 @@ public class SpwnPoint : MonoBehaviour
     {
         for (int i = 0; i < amountEnemy2; i++)
         {
-            var enemy = Instantiate(enemy1);
+            var enemy = Instantiate(enemy2);
             enemy.transform.position = transform.position;
         }
     }
