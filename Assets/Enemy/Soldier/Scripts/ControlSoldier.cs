@@ -14,6 +14,8 @@ public class ControlSoldier : MonoBehaviour, IController
         s.OnLeft += v.FlipLeft;
         s.OnRight += v.FlipRight;
         s.OnGetDmg += v.Damage;
+        s.OnShoot += v.Shoot;
+        s.OnWalk += v.Walk;
         s.OnDead += v.Dead;//Agus
     }
 
@@ -32,17 +34,19 @@ public class ControlSoldier : MonoBehaviour, IController
              {
                 if (dist <= s.distMin)
                 {
-
+                    s.Shoot();
                     s.myCurrentStrategy = s.strategyBalaActual;
 
                 }
                 else
                 {
+                    s.Walk();
                     s.myCurrentStrategy = s.myCurrentFollow;
                 }
              }
              else
              {
+                s.Walk();
                 if (Vector2.Distance(s.transform.position, s.startPos) >= 5)
                     s.myCurrentStrategy = s.myCurrentBack;
                 else

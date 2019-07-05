@@ -7,8 +7,6 @@ public class Enemy : MonoBehaviour
 {
     public IAdvance myCurrentStrategy;
     public IAdvance myCurrentNormal;
-    public IAdvance myCurrentFollow;
-    public IAdvance myCurrentBack;
 
     public IAdvance strategyBalaActual;
 
@@ -23,8 +21,7 @@ public class Enemy : MonoBehaviour
     public float _maxHP = 3;
     public float currentHP;
     public float fireRate, timer, distMax, distMin;
-
-    public SoldierSpawnerPool spawnBullet;
+    
     public Vector2 startPos;
     public Transform target;
     public Transform outputGunL;
@@ -32,14 +29,11 @@ public class Enemy : MonoBehaviour
 
     public bool dead;//Agus
     public float _timerCD;//Agus
-    public BoxCollider2D _collider;//Agus
 
 
     public virtual void Awake()
     {
         target = GameObject.FindObjectOfType<CharacterModel>().transform;
-        _collider = GetComponent<BoxCollider2D>();//Agus
-        spawnBullet = GetComponent<SoldierSpawnerPool>();
         currentHP = _maxHP;
         timer = fireRate;
         startPos = transform.position;
@@ -79,13 +73,13 @@ public class Enemy : MonoBehaviour
         OnRight();
     }
 
+
     void Dead()//Agus
     {
         _timerCD += 1 * Time.deltaTime;
         OnDead(true);
         dead = true;
-        _collider.enabled = false;
-        if (_timerCD > 1)
+        if (_timerCD > 3)
         {
             this.gameObject.SetActive(false);
         }

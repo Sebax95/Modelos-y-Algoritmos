@@ -1,0 +1,1391 @@
+fileFormatVersion: 2
+guid: ee7a4ed5e17312d4e8c3a7dd0cf6df34
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_0
+    21300002: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_1
+    21300004: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_2
+    21300006: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_3
+    21300008: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_4
+    21300010: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_5
+    21300012: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_6
+    21300014: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_7
+    21300016: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_8
+    21300018: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_9
+    21300020: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_10
+    21300022: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_11
+    21300024: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_12
+    21300026: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_13
+    21300028: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_14
+    21300030: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_15
+    21300032: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_16
+    21300034: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_17
+    21300036: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_18
+    21300038: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_19
+    21300040: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_20
+    21300042: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_21
+    21300044: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_22
+    21300046: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_23
+    21300048: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_24
+    21300050: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_25
+    21300052: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_26
+    21300054: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_27
+    21300056: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_28
+    21300058: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_29
+    21300060: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_30
+    21300062: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_31
+    21300064: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_32
+    21300066: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_33
+    21300068: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_34
+    21300070: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_35
+    21300072: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_36
+    21300074: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_37
+    21300076: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_38
+    21300078: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_39
+    21300080: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_40
+    21300082: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_41
+    21300084: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_42
+    21300086: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_43
+    21300088: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_44
+    21300090: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_45
+    21300092: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_46
+    21300094: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_47
+    21300096: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_48
+    21300098: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_49
+    21300100: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_50
+    21300102: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_51
+    21300104: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_52
+    21300106: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_53
+    21300108: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_54
+    21300110: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_55
+    21300112: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_56
+    21300114: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_57
+    21300116: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_58
+    21300118: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_59
+    21300120: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_60
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 659
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d563bbcca91fe64488fade5eee995c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 644
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ffcce85343f35b43a207bd82bfe5f4f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 644
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e92fa56830b324780519301422112c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 644
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78fd8d5b9ddd98b40807a04026166fb5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_4
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 644
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92805336f55d7914592184c2352eb357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_5
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 644
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988d784b6b7b8ae41b43769f1f8dd26a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 577
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c3db392432bff47a8525b92f859bdc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 572
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ff780fd058be04fbc6155737b66bcd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 572
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3298ccd78035941babcec2ef0610cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_9
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 572
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614c71b29cf096f43806ab523db5ec83
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_10
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 572
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4704931ab6b7c9c40a97a7d4d469468b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_11
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 572
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed97d9c946778e34fbe3fffe6600422c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0280390e43d08441924b1166059bc95
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 500
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5cb2fe5c98fc6468f42099951e8264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 500
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6561f6dedd5f256488f7d3b86f83f50a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 500
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb2c36448767244eaa73eb679e13580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 500
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01bb9c1f67453c045a75cf23b55524a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_17
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 500
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c466830820c24b4a81a0a26375ce7a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 412
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad7742fc4e1c174289daa6e4d98d8f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_19
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 413
+        width: 58
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf85b194a0af24449e2ae7457a98666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_20
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 415
+        width: 58
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c047c20ebfdba499ca07738b126018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_21
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 428
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5798ed807ae54b4478c62a73227e2046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_22
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 412
+        width: 70
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe1a5e37a2016574284c322aea6b0bc2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_23
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 428
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ba270c6deb87949b67bac35448b81c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_24
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 428
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e0a08be90999444ba81ec33647ae34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 356
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6d25b9f7c44874aab1d009d26653fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_26
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 356
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd3883c9e6438d4f9bf31d4d517535d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 356
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab18760019d2c040b640e6205849b49
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_28
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 356
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b51193de3024d489f73f21896c8611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_29
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 356
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b892bacb009bd45b9b2a64d1b841c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_30
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 356
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b128dd83ac136498600dfd4997ca9e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 284
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6314e03c43300c449763dc63a5ba067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_32
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 284
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e657d10c6e17634a89411c0b3b9a64f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 284
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c3becf7306c2047bb4ace186b31389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_34
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 284
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc22a044af72071479e7e71a7260ce4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_35
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 284
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099174b90c1a1464184dc125d1d83c3d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_36
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 284
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e4c61ce08ee884094763711a045e84
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_37
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 284
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3623994bafe1fdf41bb2b19b92671290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_38
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 284
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be6c1089f27b3343bfe99f4ce100c51
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_39
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 284
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19f4761b78abba44acf9ceadfa82282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_40
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 284
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcdd718981c7f0047b95325593eb11dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 212
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b4a09629b047e4b85b3438418b33f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_42
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 212
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3fbc330923104f4385a6ac43fd7d99a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 212
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355fcf6cf929c0f49b1b0ca2d697b740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_44
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 212
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85edb4f324a49114fa7f125b6f4d246b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 109
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0818005e9a3ca64aa0772df98aeae60
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_46
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 109
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4415f2480cd924c80f2498fd554bb3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_47
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 105
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e076d1dc35c74498e635149b71a794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_48
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 140
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4486853006f84e24dbb7fc260e2aa66d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_49
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 140
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56be70ec49d75de4ab233172b3a441e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_50
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 109
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31dc1e10d5fc30942ad2f2a8b5dd343c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87f15ea207055f47a8c4cb7c615a199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_52
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 69
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd08de915a0b1146b05f2ba57a051e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_53
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 68
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c137736df65ecb24085ae0b5dcffd749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_54
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 106
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8defa3b36bfd99e44bc1b93c433e7b08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_55
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 68
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201872ad51dc07d409667b89e82697dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_56
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 68
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa161f4744445be4f86571d765237c29
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_57
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 93
+        width: 65
+        height: 72
+      alignment: 9
+      pivot: {x: 0.39900982, y: 0.5641707}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816065aa1ecd0fb48aa96c34aba9ec3e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_58
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 96
+        width: 80
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f36f6d028abd1bc49850277d45d4c03d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_59
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 68
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fb710e5faf5dc4f8d5c9b560d8f8fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - The Ninja Warriors Ninja Warriors Again - Machine Gun Army_60
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 68
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88e4e1fecc9ba0459b23a82c45f2d26
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 18158bd1cb2d99b4ebd80af757f9031a
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -31,7 +31,7 @@ public class ControlEnemy : IController
             {
                 if (dist <= d.distMin)
                 {
-                    d.myCurrentStrategy = d.myCurrentShoot;
+                    d.myCurrentStrategy = d.strategyBalaActual;
                 }
                 else
                 {

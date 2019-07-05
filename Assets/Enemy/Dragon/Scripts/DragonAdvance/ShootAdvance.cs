@@ -5,23 +5,39 @@ using UnityEngine.SceneManagement;
 
 public class ShootAdvance : IAdvance
 {
-    Dragon xf;
-    float fr, t;
+    EnemySpawnBullet bulletsp;
+    Transform target, oR, oL, t;
+    float fr, tim;
 
-    public ShootAdvance(Dragon d, float rateFire, float timer)
+    public ShootAdvance(EnemySpawnBullet bp, Transform tar, Transform outR, Transform outL, Transform trans, float timer, float fireRate)
     {
-        xf = d;
-        fr = rateFire;
-        t = timer;
+        t = trans;
+        fr = fireRate;
+        tim = timer;
+        oR = outR;
+        oL = outL;
+        bulletsp = bp;
+        target = tar;
     }
 
     public void Advance()
     {
-        t -= 1 * Time.deltaTime;
-        if (t <= 0)
+        tim -= 1 * Time.deltaTime;
+        if (tim <= 0)
         {
-            xf.ShootBullet();
-            t = fr;
+            var bullet = bulletsp.Spawn();
+            if (t.transform.position.x < target.transform.position.x)
+            {
+                bullet.transform.position = oR.transform.position;
+                bullet.transform.rotation = Quaternion.Euler(new Vector3(0, 0, -Vector3.Angle(t.transform.position, target.position)));
+
+            }
+            else
+            {
+                bullet.transform.position = oL.transform.position;
+                bullet.transform.rotation = Quaternion.Euler(new Vector3(0, 180, -Vector3.Angle(target.position, t.transform.position)));
+            }
+            tim = fr;
         }
     }
 }

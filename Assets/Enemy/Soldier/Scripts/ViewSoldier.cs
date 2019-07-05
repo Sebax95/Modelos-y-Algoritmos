@@ -28,6 +28,15 @@ public class ViewSoldier : MonoBehaviour
         sp.color = startColor;
         anim.SetBool("Dead", isDead);
     }
+    public void Shoot()
+    {
+        anim.SetTrigger("Shoot");
+    }
+    public void Walk()
+    {
+        anim.SetTrigger("Walk");
+    }
+
     public void Damage()
     {
         StartCoroutine(animDamage());

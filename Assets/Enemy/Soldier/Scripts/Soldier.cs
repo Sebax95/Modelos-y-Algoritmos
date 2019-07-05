@@ -5,9 +5,18 @@ using System;
 
 public class Soldier : Enemy
 {
+    public SoldierSpawnerPool spawnBullet;
+    public IAdvance myCurrentFollow;
+    public IAdvance myCurrentBack;
+
+    public event Action OnShoot = delegate { };
+    public event Action OnWalk = delegate { };
+
+
     public override void Awake()
     {
         base.Awake();
+        spawnBullet = GetComponent<SoldierSpawnerPool>();
         myController = new ControlSoldier(this, GetComponentInChildren<ViewSoldier>());
         myCurrentNormal = new NormalSoldierAdvance(transform, startPos);
         myCurrentBack = new BackSoldierAdvance(transform, startPos);
@@ -19,7 +28,16 @@ public class Soldier : Enemy
     {
         base.Update();
     }
-    
+
+    public void Shoot()
+    {
+        OnShoot();
+    }
+    public void Walk()
+    {
+        OnWalk();
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)//Agus
     {
         if (collision.gameObject.tag == "Bullet")
